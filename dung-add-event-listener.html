@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dùng hàm add event listener</title>
+</head>
+<body>
+<p id="demo" >Click trỏ chuột vào đây.</p>
+<script>
+    var demo= document.getElementById("demo"); <!-- biến variable demo-  dẫn tới id  ấy nội dung ở đó là "Click trỏ chuột vào đây." để áp dụng hàm function phía sau vào rồi ra lệnh để chạy. -->
+    demo.addEventListener("mouseover",onmouseover1); <!-- cho biến demo chạy addEventListener để theo dõi khi chuột đi vào vùng được chọn ở id - là demo, hàm lệnh aEL chạy lệnh function được định nghĩa ở dưới là lệnh onmouseover1; lệnh đó yêu cầu lấy ra  để định dạng style của nó thành màu đỏ-->
+    demo.addEventListener("mouseout",onmouseout2); <!-- ... rời khỏi vùng được chọn ... onmouseout2 ... màu đen-->
+
+    function onmouseover1() {document.getElementById("demo").style.color = "red";
+    function onmouseout2() {document.getElementById("demo").style.color = "black"; <!--document ở đây là dòng  "Click trỏ chuột vào đây."-->
+    }
+</script>
+
+</body>
+</html>

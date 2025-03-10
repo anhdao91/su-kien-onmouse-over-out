@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="beta">Dẫn trỏ chuột vào đây</p>
+<script>
+    var beta=document.getElementById("beta");
+    beta.addEventListener("mouseover",mover);
+    beta.addEventListener("mouseout",mout);
+    function mover() {
+        document.getElementById("beta").style.color = "red";
+    }
+    function mout() {
+        document.getElementById("beta").style.color = "black";
+    }
+</script>
+
+</body>
+</html>
